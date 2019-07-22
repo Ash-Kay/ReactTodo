@@ -1,0 +1,25 @@
+.AddTodo{
+    margin-top: 50px;
+}
+
+.AddTodo-Form{
+    display: flex;    
+}
+
+.AddTodo input{
+    flex-grow: 1;    
+    border: none;
+    padding: 15px 10px;
+}
+
+.AddTodo button{    
+    border: none;
+    background: rgb(76, 218, 71);
+    color: white;
+    font-weight: 600;
+    padding: 0px 30px;
+}
+
+.AddTodo button:hover{
+    background: rgb(72, 226, 67);
+}

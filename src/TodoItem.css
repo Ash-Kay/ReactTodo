@@ -1,0 +1,59 @@
+.completed{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.completed:before{
+    cursor: pointer;
+    animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+.Todo {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.Todo-Item{
+    padding: 5px;
+    margin: 10px;
+}
+
+.Todo-Item button{
+    color: white;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.Todo-Edit-Form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 15px;
+
+}
+
+.Todo-Edit-Form input{
+    flex-grow: 1;
+    border: none;
+    padding: 15px 10px;
+
+}
+
+.Todo-Edit-Form button{
+    border: none;
+    background: rgb(76, 218, 71);
+    color: white;
+    font-weight: 600;
+    padding: 0px 15px;
+}
+
+.Todo-Edit-Form button:hover{
+    background: rgb(72, 226, 67);
+}
+
+@keyframes strikeitem{
+    to{
+        width: calc(100% + 1rem);
+    }
+}
